@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <h1 class="quiz-title">Welcome to Quiz Game</h1>
+    </header>
+    <main class="subbody">
+        <div class="begin">
+            <!-- Category Selection -->
+            <div id="category-container">
+                <h2 id="category-title">Select a Quiz Category</h2>
+                <button class="category-btn" data-category="general" aria-label="General Knowledge Quiz">General Knowledge</button>
+                <button class="category-btn" data-category="math" aria-label="Math Quiz">Math Quiz</button>
+                <button class="category-btn" data-category="coding" aria-label="Coding Quiz">Coding Quiz</button>
+            </div>
+            <!-- Quiz Container -->
+            <div id="question-container" class="hide">
+                <h3 id="question-text">Question will appear here</h3>
+                <div id="answer-buttons"></div>
+            </div>
+            <!-- Controls -->
+            <div class="controls">
+                <button id="start-btn">Start Quiz</button>
+                <button id="next-btn" class="hide">Next</button>
+                <button id="restart-btn" class="hide">Restart</button>
+            </div>
+            <!-- Score Display -->
+            <div id="score-container" class="hide"></div>
+        </div>
+    </main>
+    <footer>
+        <p>This application was made by <strong>Bharath Kumar</strong></p>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>
